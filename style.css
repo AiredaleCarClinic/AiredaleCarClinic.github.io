@@ -295,6 +295,7 @@ body {
   z-index: 1;
   bottom: 16px;
   left: 24px;
+  pointer-events: none;
 }
 
 .profile-img {
@@ -867,6 +868,11 @@ body {
     align-items: center;
     flex-direction: column;
     justify-content: center;
+  }
+
+  .profile-img {
+    height: 100px;
+    width: 100px;
   }
 
   .profile-img {
