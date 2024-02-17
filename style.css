@@ -830,7 +830,7 @@ body {
 .left-side-button {
   display: none;
 }
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 1024px) {
   .left-side-button {
     display: flex;
     flex-shrink: 0;
