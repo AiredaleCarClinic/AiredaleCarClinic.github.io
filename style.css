@@ -75,7 +75,7 @@ body {
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1450px) {
   .right-side {
     position: fixed;
     right: 0;
@@ -786,7 +786,7 @@ body {
   pointer-events: none;
   transition: 0.3s;
 }
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1450px) {
   .overlay.active {
     z-index: 3;
     opacity: 1;
@@ -822,7 +822,7 @@ body {
 .right-side-button svg {
   width: 22px;
 }
-@media screen and (max-width: 1210px) {
+@media screen and (max-width: 1450px) {
   .right-side-button {
     display: block;
   }

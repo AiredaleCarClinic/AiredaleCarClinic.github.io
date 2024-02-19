@@ -21,6 +21,30 @@ a:active {
     text-decoration: none;
 }
 </style>
+	
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -59,15 +83,18 @@ a:active {
         </div>
         <img src="https://i.imgur.com/ofrV3YP.jpeg" draggable="false" alt="" class="profile-cover">
         <div class="profile-menu">
-          <a class="profile-menu-link active">Home</a>
+          <a href="https://www.airedalecarclinic.co.uk/" class="profile-menu-link">Home</a>
           <a href="about-us.htm" class="profile-menu-link">About us</a>
           <a href="maps.htm" class="profile-menu-link">Google Maps</a>
-          <a href="facebook.htm" target="_blank" class="profile-menu-link">Facebook</a>
+          <a href="https://www.facebook.com/AiredaleCarClinic/" target="_blank" class="profile-menu-link active">Facebook</a>
         </div>
       </div>
       <div class="timeline">
+		  
         <div class="timeline-left">
-          <div class="intro box">
+          <div class="intro box" style="
+    margin-bottom: 20px;
+">
             <div class="intro-title">
               Introduction
               <button class="intro-menu"></button>
@@ -101,18 +128,18 @@ a:active {
                 eMail us <a href="#">info@airedalecarclinic.com&nbsp;</a>
               </div>
             </div>
-          </div>
-          <div class="event box">
+          </div><div class="event box">
             <div class="event-wrapper">
-              <img src="https://i.imgur.com/z9a0dfk.png" class="event-img">
+              <center>
+                <a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('MOT','','https://i.imgur.com/xkKRarI.gif',1)"><img src="https://i.imgur.com/XgGDlv4.png" alt="MOT" width="250" height="250" id="MOT"></a>
+              </center>
               <div class="event-date">
               </div>
               <div class="event-title">M.O.T Test Centre</div>
               <div class="event-subtitle">Looking for a reliable garage in and around Airedale, then look no further. From the same award-winning Social Enterprise Airedale Computers, Airedale Car Clinic offers a range of car servicing, repairs, and MOTs. With all profits being donated back to local communities.
 </div>
             </div>
-          </div>
-          <div class="event box">
+          </div><div class="event box">
             <div class="event-wrapper">
               <img src="https://i.imgur.com/4nYAZim.png" class="event-img">
               <div class="event-date">
@@ -122,8 +149,7 @@ a:active {
               <div class="event-title">Asda Food Bank</div>
               <div class="event-subtitle">Thanks Asda for the food for food bank</div>
             </div>
-          </div>
-          <div class="event box">
+          </div><div class="event box">
             <div class="event-wrapper">
               <img src="https://i.imgur.com/ox4NGgh.png" class="event-img">
               <div class="event-date">
@@ -147,21 +173,18 @@ a:active {
           </div>
         </div>
         <div class="timeline-right">
-          <div class="status box">
+			<div class="status box" style="
+    margin-bottom: 20px;
+">
             <div class="status-menu">
-              <a class="status-menu-item active" href="#">More than just your local garage&nbsp;</a>
+              <a class="status-menu-item active" href="#">Status</a>
+              <a class="status-menu-item" href="#">Photos</a>
+              <a class="status-menu-item" href="#">Videos</a>
             </div>
             <div class="status-main">
-              <table width="100%" border="0">
-                <tbody>
-                  <tr>
-                    <td><img src="https://i.imgur.com/xLsk5T4.png" draggable="false" class="profile-img"></td>
-                    <td><span style="font-size:16px"><span style="color:#f7fef1">Airedale Car Clinic is a Community Social Enterprise that offers service and MOT for all makes of cars. It is located at The Active Centre, Stansfield Road, Airedale, the same place as Airedale Computers . All the profits from Airedale Car Clinic go to Chrysalis Youth and Community Project.</span></span></td>
-                  </tr>
-                </tbody>
-              </table>
+              <img src="https://i.imgur.com/Js9pZbx.png" class="status-img">
+              <textarea class="status-textarea" placeholder="Write something to Airedale Car Clinic"></textarea>
             </div>
-			  
             <div class="status-actions">
               <a href="#" class="status-action">
                 <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
@@ -170,167 +193,236 @@ a:active {
                   <path d="M210.4 246.6h-.1V0c34 0 63.3 12.2 87.2 36.1 24 24 36.2 53.3 36.2 87.2 0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1zm0 0" fill="#f5a86c"></path>
                   <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H210.2V286.5h3.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#2682ff"></path>
                 </svg>
-                Social Enterprise at it's best
+                People
               </a>
-              
-              <button class="status-share" style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;">MOT</button>
-              <button class="status-share" style="margin-left: 10px; padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;">Service</button>
-              <button class="status-share" style="margin-left: 10px;"><a href="https://www.facebook.com/AiredaleCarClinic/reviews?locale=en_GB" target="_blank"><span style="color:#ffffff">Review</span></a></button>
-            </div>
+              <a href="#" class="status-action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <path d="M87.084 192c-.456-5.272-.688-10.6-.688-16C86.404 78.8 162.34 0 256.004 0s169.6 78.8 169.6 176c0 5.392-.232 10.728-.688 16h.688c0 96.184-169.6 320-169.6 320s-169.6-223.288-169.6-320h.68zm168.92 32c36.392 1.024 66.744-27.608 67.84-64-1.096-36.392-31.448-65.024-67.84-64-36.392-1.024-66.744 27.608-67.84 64 1.096 36.392 31.448 65.024 67.84 64z" fill="#e21b1b"></path>
+                </svg>
+                Check in
+              </a>
+              <a href="#" class="status-action">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                  <circle cx="256" cy="256" r="256" fill="#ffca28"></circle>
+                  <g fill="#6d4c41">
+                    <path d="M399.68 208.32c-8.832 0-16-7.168-16-16 0-17.632-14.336-32-32-32s-32 14.368-32 32c0 8.832-7.168 16-16 16s-16-7.168-16-16c0-35.296 28.704-64 64-64s64 28.704 64 64c0 8.864-7.168 16-16 16zM207.68 208.32c-8.832 0-16-7.168-16-16 0-17.632-14.368-32-32-32s-32 14.368-32 32c0 8.832-7.168 16-16 16s-16-7.168-16-16c0-35.296 28.704-64 64-64s64 28.704 64 64c0 8.864-7.168 16-16 16z"></path>
+                  </g>
+                  <path d="M437.696 294.688c-3.04-4-7.744-6.368-12.736-6.368H86.4c-5.024 0-9.728 2.336-12.736 6.336-3.072 4.032-4.032 9.184-2.688 14.016C94.112 390.88 170.08 448.32 255.648 448.32s161.536-57.44 184.672-139.648c1.376-4.832.416-9.984-2.624-13.984z" fill="#fafafa"></path>
+                </svg>
+                Mood
+              </a>
+              <button class="status-share"><a href="https://www.facebook.com/AiredaleCarClinic/" target="_blank"><span style="color:#e6f7ff">Post via Facebook</span></a></button>
+            </div><span style="color:#4A4A52"><span style="font-size:11px;padding-left: 1px;">Poast via Facebook requires you to be logged in, if post cannot succeed, you'll be pointed to our Facebook page directly.</span>
           </div>
-          <div class="status box" style="
-    margin-top: 20px;
-">
-            <div align="right" class="status-menu">
-              <a class="status-menu-item active" href="#">Servicing and Repairs for all makes
-
-</a>
-            </div>
+          <div class="status box">
+			  			  
+            <div class="album box">
             <div class="status-main">
-              <table width="100%" border="0">
-                <tbody>
-                  <tr>
-                    <td><span style="font-size:16px"><span style="color:#f7fef1">At our garage, we offer a wide range of services, including MOTs, general repairs, and diagnostics. We provide excellent value for money and can service any make of car. As members of the National Service Network and 1-Link, we also offer high-quality service to leasing companies and fleet operators. You can enjoy our comfortable and warm waiting/viewing area, where you can use a computer with  internet access while you wait.</span></span></td>
-                    <td><img src="https://i.imgur.com/AeFGsZp.png" draggable="false" class="profile-img"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-			  
-            <div class="status-actions">
-              <a href="#" class="status-action">
-                <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M333.7 123.3c0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1h-.1c-33.9 0-63.2-12.1-87.1-36.1-24-24-36.2-53.3-36.2-87.2 0-33.9 12.2-63.2 36.2-87.2 24-24 53.2-36 87-36.1h.2c33.8 0 63.2 12.2 87.1 36.1 24 24 36.2 53.3 36.2 87.2zm0 0" fill="#ffbb85"></path>
-                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H90.2c-26.6 0-48.5-8-65-23.7C8.5 472.3 0 450.7 0 423.9c0-10.2.3-20.4 1-30.2a302.7 302.7 0 0112.1-64.9c3.3-10.3 7.8-20.5 13.4-30.3 5.8-10.2 12.5-19 20.1-26.3a89 89 0 0129-18.2c11.2-4.4 23.7-6.7 37-6.7 5.2 0 10.3 2.2 20 8.5l21 13.5c6.6 4.3 15.7 8.3 27 11.9a107.7 107.7 0 0033 5.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#6aa9ff"></path>
-                  <path d="M210.4 246.6h-.1V0c34 0 63.3 12.2 87.2 36.1 24 24 36.2 53.3 36.2 87.2 0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1zm0 0" fill="#f5a86c"></path>
-                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H210.2V286.5h3.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#2682ff"></path>
-                </svg>
-                 Amazing value for money
-              </a>
-              
-              <button class="status-share" style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;">Repairs</button>
-              <button class="status-share" style="margin-left: 10px; padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;">Diagnostics</button>
-              <button class="status-share" style="margin-left: 10px;"><a href="https://www.facebook.com/AiredaleCarClinic/reviews?locale=en_GB" target="_blank"><span style="color:#ffffff">Review</span></a></button>
-            </div>
-          </div><div class="status box" style="
-    margin-top: 20px;
-">
-            <div align="right" class="status-menu">
-              <a class="status-menu-item active" href="#">Clutches, Brakes, Exhausts, Wheel Balancing
-
-              </a>
-            </div>
-            <div class="status-main">
-              <table width="100%" border="0">
-                <tbody>
-                  <tr>
-                    <td><img src="https://i.imgur.com/u5zoNDc.png" draggable="false" class="profile-img"></td>
-                    <td><span style="font-size:16px"><span style="color:#f7fef1">Our workshop is modern and fully equipped, and our technicians are fully trained. We can handle most servicing and repairs, such as regular servicing and maintenance, brakes, clutches, exhausts, tyres and repairs, wheel alignment, wheel balancing, MOT testing, and general repairs.</span></span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-			  
-            <div class="status-actions">
-              <a href="#" class="status-action">
-                <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M333.7 123.3c0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1h-.1c-33.9 0-63.2-12.1-87.1-36.1-24-24-36.2-53.3-36.2-87.2 0-33.9 12.2-63.2 36.2-87.2 24-24 53.2-36 87-36.1h.2c33.8 0 63.2 12.2 87.1 36.1 24 24 36.2 53.3 36.2 87.2zm0 0" fill="#ffbb85"></path>
-                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H90.2c-26.6 0-48.5-8-65-23.7C8.5 472.3 0 450.7 0 423.9c0-10.2.3-20.4 1-30.2a302.7 302.7 0 0112.1-64.9c3.3-10.3 7.8-20.5 13.4-30.3 5.8-10.2 12.5-19 20.1-26.3a89 89 0 0129-18.2c11.2-4.4 23.7-6.7 37-6.7 5.2 0 10.3 2.2 20 8.5l21 13.5c6.6 4.3 15.7 8.3 27 11.9a107.7 107.7 0 0033 5.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#6aa9ff"></path>
-                  <path d="M210.4 246.6h-.1V0c34 0 63.3 12.2 87.2 36.1 24 24 36.2 53.3 36.2 87.2 0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1zm0 0" fill="#f5a86c"></path>
-                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H210.2V286.5h3.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#2682ff"></path>
-                </svg>
-                We've got the right tool for every job!
-              </a>
-              <button class="status-share" style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;">Servicing</button>
-              <button class="status-share" style="margin-left: 10px;"><a href="https://www.facebook.com/AiredaleCarClinic/reviews?locale=en_GB" target="_blank"><span style="color:#ffffff">Review</span></a></button>
-            </div>
-          </div><div class="status box" style="
-    margin-top: 20px;
-">
-            <div align="right" class="status-menu">
-              <a class="status-menu-item active" href="#">Melvyn and Angela
-
-</a>
-            </div>
-            <div class="status-main">
-              <table width="100%" border="0">
-                <tbody>
-                  <tr>
-                    <td><span style="font-size:16px"><span style="color:#f7fef1">Mel is our Car Clinic Manager and is highly qualified with over 30 years experience in the motor industry. He has a wealth of knowledge across a range of vehicles. He loves anything with a good engine hence his collection of Porche, Mercedes, Harley Davidson, and even a stock car.<br>Angie started with us as an apprentice and qualified several years ago. She also passed her MOT testers exam.<br>(<em>she has now left</em>) </span></span></td>
-                    <td><img src="https://i.imgur.com/A0z4j2D.png" draggable="false" class="profile-img"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-			  
-            <div class="status-actions">
-              <a href="#" class="status-action">
-                <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M333.7 123.3c0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1h-.1c-33.9 0-63.2-12.1-87.1-36.1-24-24-36.2-53.3-36.2-87.2 0-33.9 12.2-63.2 36.2-87.2 24-24 53.2-36 87-36.1h.2c33.8 0 63.2 12.2 87.1 36.1 24 24 36.2 53.3 36.2 87.2zm0 0" fill="#ffbb85"></path>
-                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H90.2c-26.6 0-48.5-8-65-23.7C8.5 472.3 0 450.7 0 423.9c0-10.2.3-20.4 1-30.2a302.7 302.7 0 0112.1-64.9c3.3-10.3 7.8-20.5 13.4-30.3 5.8-10.2 12.5-19 20.1-26.3a89 89 0 0129-18.2c11.2-4.4 23.7-6.7 37-6.7 5.2 0 10.3 2.2 20 8.5l21 13.5c6.6 4.3 15.7 8.3 27 11.9a107.7 107.7 0 0033 5.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#6aa9ff"></path>
-                  <path d="M210.4 246.6h-.1V0c34 0 63.3 12.2 87.2 36.1 24 24 36.2 53.3 36.2 87.2 0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1zm0 0" fill="#f5a86c"></path>
-                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H210.2V286.5h3.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#2682ff"></path>
-                </svg>
-              Call us today on 01977 736281&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
-              
-              <button class="status-share" style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;">MOT</button>
-              <button class="status-share" style="margin-left: 10px;"><a href="https://www.facebook.com/AiredaleCarClinic/reviews?locale=en_GB" target="_blank"><span style="color:#ffffff">Review</span></a></button>
-            </div>
-          </div><div class="album box">
-            <div class="status-main" style="
-    padding-bottom: 0px;
-">
-              <img src="https://i.imgur.com/Js9pZbx.png" class="status-img" align="top">
+              <img src="https://i.imgur.com/Js9pZbx.png" class="status-img">
               <div class="album-detail">
-                <div class="album-title"><strong>Airedale Car Clinic&nbsp;</strong> added a <span>thing</span></div>
-                <div class="album-date" style="
-    margin-top: 0px;
-">
-                  <p style="
-    margin-bottom: 5px;
-    margin-top: 0px;
-">I can call it a thing if i want to :)&nbsp;</p>
-                  <p style="
-    margin-bottom: 0px;
-    margin-top: 5px;
-"><em>The below sentence was definitely not generated with Chat GPT&nbsp;</em>🤔</p>
-                </div>
+                <div class="album-title"><strong>Airedale Car Clinic</strong> <span>&nbsp;</span></div>
+                <div class="album-date">9 January 🌐</div>
               </div>
               <button class="intro-menu"></button>
             </div>
-            <div class="album-content">Our car clinic has been recognized with numerous awards and generous donations for our excellent service to our community. 
-We have been serving our loyal customers for over 15 years, and we always strive to provide the best quality and care for your car. 
-You won’t find a better deal for your car maintenance anywhere else, as we offer competitive prices and discounts for our services. 
-And as a bonus, every time you use our service, you also help our charity, which supports our charity "Chrysalis Youth and Community Project" 
-So book your service with us today and enjoy the benefits of our car clinic.
+            <div class="album-content">Looking for a reliable garage in and around Airedale, then look no further. From the same award-winning Social Enterprise Airedale Computers, Airedale Car Clinic offers a range of car servicing, repairs, and MOTs. With all profits being donated back to local communities.<br><a href="https://www.facebook.com/photo/?fbid=869114075220606&set=a.455366269928724" target="_blank"><img src="https://i.imgur.com/AZIBoDj.png" alt="M.O.T - When is yours due? Call in now" style="margin-top: 6px;margin-left: 6px;"></a><br><br><div class="user"> <img alt="" class="user-img" src="https://scontent.fltn4-1.fna.fbcdn.net/v/t39.30808-1/415741656_10230653209624250_3774788183980402332_n.jpg?stp=dst-jpg_p100x100&_nc_cat=106&ccb=1-7&_nc_sid=5740b7&_nc_ohc=OQhjN-Z9GQIAX-RHVIt&_nc_ht=scontent.fltn4-1.fna&oh=00_AfD59vy4kk8F6GaFsj8JNf3mcuPMRJwISH8_d9chQvQ4xQ&oe=65D7DBF6">
+        <div class="username">Lee Eccles<span style="color:#999999"><span style="font-size:9px"> &nbsp; 11th January 2024 13:22</span></span>
+          <div class="album-date"><span style="color:#e6f7ff">Do You do Class 7 or not thanks</span></div>
+        </div>
+      </div><div class="user" style="
+    margin-top: 8px;
+">
+        <a href="#" style="
+    margin-left: 30px;
+"><img alt="" class="user-img" src="https://i.imgur.com/TVgxXA9.png"></a>
+        <div class="username">Airedale Car Clinic<span style="color:#999999"><span style="font-size:9px"> &nbsp; 11th January 2024 13:46</span></span>
+          <div class="album-date"><span style="color:#e6f7ff">Sorry class 4 only</span></div>
+        </div>
+      </div>
               <div class="album-photos">
-                <img src="https://i.imgur.com/fAYNx6i.png" alt="" class="album-photo">
-                <div class="album-right">
-                  <img src="https://i.imgur.com/GJKKETx.png" alt="" class="album-photo">
-                  <img src="https://i.imgur.com/FV8J4Jt.png" alt="" class="album-photo">&gt;
-                </div>
+                
+                
               </div>
             </div>
-            <div class="status-actions" style="
-    padding-top: 0px;
+            <div class="album-actions" style="
+    padding-bottom: 10px;
 ">
               <a href="#" class="album-action">
                 <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
                   <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
                 </svg>
-              1.7k</a>
+                4
+              </a>
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path>
+                </svg>
+                2
+              </a>
               <a href="#" class="album-action">
                 <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
                   <path d="M17 1l4 4-4 4"></path>
                   <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4"></path>
                   <path d="M21 13v2a4 4 0 01-4 4H3"></path>
                 </svg>
-                43<br>
-              </a><br>
-              <button class="status-share" style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;">MOT</button>
-              <button class="status-share" style="margin-left: 10px;"><a href="https://www.facebook.com/AiredaleCarClinic/reviews?locale=en_GB" target="_blank"><span style="color:#ffffff">Review</span></a></button>
+                14&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
+            </div><span style="color:#4A4A52"><span style="font-size:11px;padding-left: 1px;">Stats are loaded from Facebook Page | Airedale Car Clinic</span>
+				
+          </div>
+          </div><div class="album box">
+            <div class="status-main">
+              <img src="https://i.imgur.com/Js9pZbx.png" class="status-img">
+              <div class="album-detail">
+                <div class="album-title"><strong>Airedale Car Clinic</strong> updated their <span>cover photo.</span></div>
+                <div class="album-date">9 January 🌐</div>
+              </div>
+              <button class="intro-menu"></button>
             </div>
-            <span style="color:#4A4A52"><span style="font-size:11px">&nbsp;stats via the imaginary nothing API</span></span>          </div>
+            <div class="album-content"><a href="https://www.facebook.com/photo?fbid=869099408555406&set=a.455366266595391" target="_blank"><img src="https://i.imgur.com/7jPqVRZ.png" alt="M.O.T - When is yours due? Call in now" style="margin-top: 6px;margin-left: 6px;"></a>
+              <div class="album-photos">
+                
+                
+              </div>
+            </div>
+            <div class="album-actions" style="
+    padding-bottom: 10px;
+">
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+                </svg>
+              1
+            </a>
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path>
+              </svg>
+                0
+              </a>
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                  <path d="M17 1l4 4-4 4"></path>
+                  <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4"></path>
+                  <path d="M21 13v2a4 4 0 01-4 4H3"></path>
+                </svg>
+                0&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; </a>
+            </div><span style="color:#4A4A52"><span style="font-size:11px;padding-left: 1px;">Stats are loaded from Facebook Page | Airedale Car Clinic</span></span>
+				
+          </div><div class="album box">
+            <div class="status-main">
+              <img src="https://i.imgur.com/Js9pZbx.png" class="status-img">
+              <div class="album-detail">
+                <div class="album-title"><strong>Airedale Car Clinic</strong> <span>&nbsp;</span></div>
+                <div class="album-date">25 October 2023 🌐</div>
+              </div>
+              <button class="intro-menu"></button>
+            </div>
+            <div class="album-content">Looking for a reliable garage. Airedale Car Clinic is part of an award-winning Social Enterprise. Airedale Community Trading (ACT) along with Airedale Computers, both run for the community by the community. Where profits are re-invested back into your local community. That is why we are trusted by major leasing companies and businesses to keep their vehicles on the road.  We can provide excellent service, repair, and MOT to your vehicle at a reasonable price, by qualified technicians. For a free estimate, or to book a MOT phone us now at 01977 736281, or call in at The Active Centre, Stansfield Road, Airedale, Castleford WF10 3UA<br><a href="https://www.facebook.com/photo/?fbid=869114075220606&amp;set=a.455366269928724" draggable="false" target="_blank"><img src="https://i.imgur.com/RqHvSSG.png" alt="M.O.T - When is yours due? Call in now" style="margin-top: 6px;margin-left: 6px;"></a><div class="user"> <img alt="" class="user-img" src="https://scontent.fltn4-1.fna.fbcdn.net/v/t39.30808-1/347397133_143403478641090_4890021510514938402_n.jpg?stp=dst-jpg_s200x200&_nc_cat=109&ccb=1-7&_nc_sid=5740b7&_nc_ohc=3pyVHZtOhT4AX_rCSE9&_nc_ht=scontent.fltn4-1.fna&oh=00_AfAegOjQNgvX8Mi5WVoAdoj-gI2ZAv0PV1AUE0QqNOXMKw&oe=65D807D1">
+        <div class="username">Kenneth Yelland<span style="color:#999999"><span style="font-size:9px"> &nbsp; 18th February 2024 16:38</span></span>
+          <div class="album-date"><span style="color:#e6f7ff">I had a problem with the wife's mobility scooter called in to see if they could help me chap came out sorted it for me no charge very pleasant and helpful</span></div>
+        </div>
+      </div><div class="user"> <img alt="" class="user-img" src="https://scontent.fltn4-1.fna.fbcdn.net/v/t1.18169-1/1150350_10152115188293356_1330630762_n.jpg?stp=c14.14.172.172a_dst-jpg_p200x200&_nc_cat=103&ccb=1-7&_nc_sid=2b6aad&_nc_ohc=gWTbhfhTcyoAX864oBc&_nc_ht=scontent.fltn4-1.fna&oh=00_AfAettUkJOte8-gfmyUOKAUMR2oQ8AybwFwhmimJ2M9LXQ&oe=65F9D1BA">
+        <div class="username">Howard K Wiles<span style="color:#999999"><span style="font-size:9px"> &nbsp; &nbsp;6th February 2024 09:32</span></span>
+          <div class="album-date"><span style="color:#e6f7ff">Highly recommended.</span></div>
+        </div>
+      </div><div class="user"> <img alt="" class="user-img" src="https://scontent.fltn4-1.fna.fbcdn.net/v/t39.30808-1/242059184_1558375201178704_1251351125138490546_n.jpg?stp=dst-jpg_p200x200&_nc_cat=105&ccb=1-7&_nc_sid=5740b7&_nc_ohc=ReLkF-z6N9sAX8fTL5S&_nc_oc=AQnsBvZKrwl3e7uP4qOcz3-y9JvQotqqVJYv08ICZ5Xxhbfzks81u-dPBGZMgpnY9gg&_nc_ht=scontent.fltn4-1.fna&oh=00_AfDWsbYXnZR2xb0IitfJy8GhP7Zif3s1iLTPRQXIRgioBQ&oe=65D84A58">
+        <div class="username">Michael Smith<span style="color:#999999"><span style="font-size:9px"> &nbsp; &nbsp;30th October 2023 10:54</span></span>
+          <div class="album-date"><span style="color:#e6f7ff">Very good service,low prices friendly and reliable</span></div>
+        </div>
+      </div><div class="user"> <img alt="" class="user-img" src="https://scontent.fltn4-1.fna.fbcdn.net/v/t39.30808-1/358145127_105537692635237_416365172798899623_n.jpg?stp=dst-jpg_p200x200&_nc_cat=101&ccb=1-7&_nc_sid=5740b7&_nc_ohc=rBCnvyFUtSUAX_pLjK8&_nc_ht=scontent.fltn4-1.fna&oh=00_AfB6-20j6WASNIPGGRtWVOm34jW_O7N5HX1FmjtjNHZhPA&oe=65D7D55D">
+        <div class="username">Phil Biggin<span style="color:#999999"><span style="font-size:9px"> &nbsp; &nbsp;30th October 2023 18:30</span></span>
+          <div class="album-date"><span style="color:#e6f7ff">Airedale look after our companies vehicles … great value, prompt service with a smile … Melvyn is a top bloke 👍👍</span></div>
+        </div>
+      </div><div class="user" style="
+    margin-top: 8px;
+">
+        <a href="#" style="
+    margin-left: 30px;
+"><img alt="" class="user-img" src="https://i.imgur.com/TVgxXA9.png"></a>
+        <div class="username">Airedale Car Clinic<span style="color:#999999"><span style="font-size:9px"> &nbsp; 11th January 2024 13:46</span></span>
+          <div class="album-date"><span style="color:#e6f7ff">thanks for that phill</span></div>
+        </div>
+      </div><div class="user"> <img alt="" class="user-img" src="https://scontent.fltn4-1.fna.fbcdn.net/v/t39.30808-1/405924120_10230592065495768_7898434100880192839_n.jpg?stp=cp6_dst-jpg_p100x100&_nc_cat=109&ccb=1-7&_nc_sid=5740b7&_nc_ohc=ZxTeX2hI4B4AX-OUTKm&_nc_ht=scontent.fltn4-1.fna&oh=00_AfCVxKSggAfXj7mf7gH7RDa5Qv1IAiz7HC8JW4hStqGD6w&oe=65D74668">
+        <div class="username">Melanie Whitton<span style="color:#999999"><span style="font-size:9px"> &nbsp; 27th October 2023 12:07</span></span>
+          <div class="album-date"><span style="color:#e6f7ff">Can you do anything with a sticky turbo?</span></div>
+        </div>
+      </div><div class="user"> <img alt="" class="user-img" src="https://scontent.fltn4-1.fna.fbcdn.net/v/t39.30808-1/391600058_10230885725516183_4245870275233885731_n.jpg?stp=dst-jpg_s100x100&_nc_cat=110&ccb=1-7&_nc_sid=5740b7&_nc_ohc=uS_EfKHeDfYAX8y0EZP&_nc_ht=scontent.fltn4-1.fna&oh=00_AfDt9303iXhdWuG1F0elwgoC7XBFJ8eyLV_irz2cHKWYYA&oe=65D7A07A">
+        <div class="username">John Sharp<span style="color:#999999"><span style="font-size:9px"> &nbsp; &nbsp;26th October 2023 11:10</span></span>
+          <div class="album-date"><span style="color:#e6f7ff">Good service and low charges.</span></div>
+        </div>
+      </div>
+              <div class="album-photos">
+                
+                
+              </div>
+            </div>
+            <div class="album-actions" style="
+    padding-bottom: 10px;
+">
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24">
+                  <path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"></path>
+                </svg>
+              9
+            </a>
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"></path>
+              </svg>
+                7
+              </a>
+              <a href="#" class="album-action">
+                <svg stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1" viewBox="0 0 24 24">
+                  <path d="M17 1l4 4-4 4"></path>
+                  <path d="M3 11V9a4 4 0 014-4h14M7 23l-4-4 4-4"></path>
+                  <path d="M21 13v2a4 4 0 01-4 4H3"></path>
+                </svg>
+              3&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
+            </div><span style="color:#4A4A52"><span style="font-size:11px;padding-left: 1px;">Stats are loaded from Facebook Page | Airedale Car Clinic</span></span>
+				
+          </div>
+          <div class="status box" style="
+    margin-top: 20px;
+">
+          </div><div class="status box" style="
+    margin-top: 20px;
+">
+            <div align="right" class="status-menu">
+              <a class="status-menu-item active" href="#">More Facebook Content
+
+              </a>
+            </div>
+            <div class="status-main">
+              <table width="100%" border="0">
+                <tbody>
+                  <tr>
+                    <td><img src="https://i.imgur.com/GaKXUwz.png" draggable="false" class="profile-img"></td>
+                    <td>
+                      <p style="
+    margin-top: 6px;
+"><font color="#999999"><span style="font-size: 10px;"></span></font>
+                    Are you interested in seeing more of Airedale Car Clinic's Facebook has to offer? You can visit our page and get access to a variety of content, such as all our timeline posts, photos, and comments from our satisfied customers and the local community. Our Facebook page is a great way to stay in touch with us and learn more about our services and promotions. To visit our Facebook page, just click on the button below.</p>                      </span></span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+			  
+            <div class="status-actions">
+              <a href="#" class="status-action">
+              <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M333.7 123.3c0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1h-.1c-33.9 0-63.2-12.1-87.1-36.1-24-24-36.2-53.3-36.2-87.2 0-33.9 12.2-63.2 36.2-87.2 24-24 53.2-36 87-36.1h.2c33.8 0 63.2 12.2 87.1 36.1 24 24 36.2 53.3 36.2 87.2zm0 0" fill="#ffbb85"></path>
+                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H90.2c-26.6 0-48.5-8-65-23.7C8.5 472.3 0 450.7 0 423.9c0-10.2.3-20.4 1-30.2a302.7 302.7 0 0112.1-64.9c3.3-10.3 7.8-20.5 13.4-30.3 5.8-10.2 12.5-19 20.1-26.3a89 89 0 0129-18.2c11.2-4.4 23.7-6.7 37-6.7 5.2 0 10.3 2.2 20 8.5l21 13.5c6.6 4.3 15.7 8.3 27 11.9a107.7 107.7 0 0033 5.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#6aa9ff"></path>
+                  <path d="M210.4 246.6h-.1V0c34 0 63.3 12.2 87.2 36.1 24 24 36.2 53.3 36.2 87.2 0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1zm0 0" fill="#f5a86c"></path>
+                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H210.2V286.5h3.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#2682ff"></path>
+                </svg>
+              <a href="https://www.facebook.com/AiredaleCarClinic/" target="_blank" style="
+    margin-top: 10px;
+    margin-left: -20;
+"><span style="color:#e6f7ff">https://www.facebook.com/AiredaleCarClinic/</span></a>
+            </a>
+              <button class="status-share" style=""><a href="https://www.facebook.com/AiredaleCarClinic/" target="_blank"><span style="color:#ffffff"><strong><span style="font-size:16px">Facebook</span></strong></span></a></button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
