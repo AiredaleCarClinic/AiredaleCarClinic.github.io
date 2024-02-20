@@ -26,6 +26,29 @@ a:active {
     text-decoration: none;
 }
 </style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -108,7 +131,9 @@ a:active {
             </div>
           </div>
           <div class="event box">
-            <div class="event-wrapper"> <a href="mot.htm"><img src="https://i.imgur.com/z9a0dfk.png" class="event-img"></a>
+            <div class="event-wrapper"> <center>
+                <a href="mot.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('MOT','','https://i.imgur.com/xkKRarI.gif',1)"><img src="https://i.imgur.com/XgGDlv4.png" alt="MOT" width="250" height="250" id="MOT"></a>
+              </center>
               <div class="event-date">
               </div>
               <div class="event-title">M.O.T Test Centre</div>
@@ -153,7 +178,7 @@ a:active {
         <div class="timeline-right">
           <div class="status box">
             <div class="status-menu">
-              <a class="status-menu-item active" href="#">More than just your local garage&nbsp;</a>
+              <a class="status-menu-item active" href="#">🏪 More than just your local garage&nbsp;</a>
             </div>
             <div class="status-main">
               <table width="100%" border="0">
@@ -178,7 +203,7 @@ a:active {
               </a>
               
               <button class="status-share" style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;"><a href="mot.htm"><span style="color:#ffffff">MOT</span></a></button>
-              <button class="status-share" style="margin-left: 10px; padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;">Service</button>
+              <button class="status-share" style="margin-left: 10px; padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;"><a href="service.htm"><span style="color:#ffffff">Service</span></a></button>
               <button class="status-share" style="margin-left: 10px;"><a href="https://www.facebook.com/AiredaleCarClinic/reviews?locale=en_GB" target="_blank"><span style="color:#ffffff">Review</span></a></button>
             </div>
           </div>
@@ -186,9 +211,9 @@ a:active {
     margin-top: 20px;
 ">
             <div align="right" class="status-menu">
-              <a class="status-menu-item active" href="#">Servicing and Repairs for all makes
+              <a class="status-menu-item active" href="#">🔧 Servicing and Repairs for all makes
 
-</a>
+              </a>
             </div>
             <div class="status-main">
               <table width="100%" border="0">
@@ -220,7 +245,7 @@ a:active {
     margin-top: 20px;
 ">
             <div align="right" class="status-menu">
-              <a class="status-menu-item active" href="#">Clutches, Brakes, Exhausts, Wheel Balancing
+              <a class="status-menu-item active" href="#">⚙️ Clutches, Brakes, Exhausts, Wheel Balancing
 
               </a>
             </div>
@@ -245,16 +270,16 @@ a:active {
                 </svg>
                 We've got the right tool for every job!
               </a>
-              <button class="status-share" style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;">Servicing</button>
+              <button class="status-share" style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;"><a href="service.htm"><span style="color:#ffffff">Service</span></a></button>
               <button class="status-share" style="margin-left: 10px;"><a href="https://www.facebook.com/AiredaleCarClinic/reviews?locale=en_GB" target="_blank"><span style="color:#ffffff">Review</span></a></button>
             </div>
           </div><div class="status box" style="
     margin-top: 20px;
 ">
             <div align="right" class="status-menu">
-              <a class="status-menu-item active" href="#">Melvyn and Angela
+              <a class="status-menu-item active" href="#">👨‍🏭 Melvyn and Angela
 
-</a>
+              </a>
             </div>
             <div class="status-main">
               <table width="100%" border="0">
@@ -297,7 +322,7 @@ a:active {
                   <p style="
     margin-bottom: 0px;
     margin-top: 5px;
-"><em>The below sentence was definitely not generated with Chat GPT&nbsp;</em>🤔</p>
+"><em>&nbsp;</em></p>
                 </div>
               </div>
               <button class="intro-menu"></button>

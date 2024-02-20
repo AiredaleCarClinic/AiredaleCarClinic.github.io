@@ -5,7 +5,7 @@
   <meta property="og:image:height" content="627">
   <meta property="og:title" content="Airedale Car Clinic">
   <meta property="og:description" content="We're a Community Social Enterprise, a Community Social Enterprise that offers service and MOT for all makes of cars. It is located at The Active Centre, Stansfield Road, Airedale, the same place as Airedale Computers">
-  <title>About Us | Airedale Car Clinic</title>
+  <title>Service | Airedale Car Clinic</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
@@ -26,8 +26,31 @@ a:active {
     text-decoration: none;
 }
 </style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
-<body>
+<body onLoad="MM_preloadImages('https://i.imgur.com/dRvBsJk.gif')">
 <!-- partial:index.partial.html -->
 <div class="container" x-data="{ rightSide: false, leftSide: false }">
   <div class="left-side" :class="{'active' : leftSide}">
@@ -62,12 +85,14 @@ a:active {
           <img src="https://i.imgur.com/Js9pZbx.png" alt="" class="profile-img">
           <div class="profile-name"><span style="font-size:38px"><span style="color:#DEFFD6"><strong><img src="https://i.imgur.com/PUgOUzB.png" draggable="false" width="80%" alt=""></strong></span></span></div>
         </div>
-        <img src="https://i.imgur.com/ofrV3YP.jpeg" draggable="false" alt="" class="profile-cover">
+        <img src="https://i.imgur.com/JelHpht.jpeg" draggable="false" alt="" class="profile-cover">
         <div class="profile-menu">
           <a href="https://www.airedalecarclinic.co.uk/" class="profile-menu-link">Home</a>
-          <a href="#" class="profile-menu-link active">About us</a>
+          <a href="about-us.htm" class="profile-menu-link">About us</a>
           <a href="maps.htm" class="profile-menu-link">Google Maps</a>
           <a href="facebook.htm" class="profile-menu-link">Facebook</a>
+          <a href="#" style="margin-left: 20%;"> &nbsp; &nbsp; &nbsp; &nbsp;</a>
+          <a href="#" class="profile-menu-link active">Service</a>
         </div>
       </div>
       <div class="timeline">
@@ -109,137 +134,16 @@ a:active {
                 eMail us <a href="#">info@airedalecarclinic.com&nbsp;</a>
               </div>
             </div>
-          </div><div class="intro box">
-            <div class="intro-title">
-              Services (A - Z)&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-<button class="intro-menu"></button>
-            </div>
-            <div class="info">
-              <div class="side-menu">
-        <a href="#">
-        •🔋 Battery servicing
-      </a>
-        <a href="#">
-        • 🔧Brakes repairs
-      </a>
-        <a href="#">
-        • 🪝Breakdown recovery
-      </a>
-        <a href="#">
-        • 🚘Bumper repairs
-      </a>
-        <a href="#">
-        • 🚗Car accident repairs
-      </a>
-        <a href="#">
-        • 🚙Car body repairs
-      </a>
-        <a href="#">
-        • 🛻Car scratch repairs
-      </a>
-        <a href="#">
-        • 🚐 Car body repairs
-      </a>
-        <a href="#">
-        • 💨 Catalytic converter replacement
-      </a>
-        <a href="#">
-        • 🚘Clutch adjustment
-      </a>
-        <a href="#">
-        • 🚗Clutch repair
-      </a>
-        <a href="#">
-        • ⚙️Clutch replacement
-      </a>
-        <a href="#">
-        • 💦Coolant replacement
-      </a>
-        <a href="#">
-        • 🔩Diesel engine diagnostics
-      </a>
-        <a href="#">
-        •🔧 Differential repair
-      </a>
-        <a href="#">
-        • 👷Engine diagnostics
-      </a>
-        <a href="#">
-        • 👷‍♂️Engine oil change
-      </a>
-        <a href="#">
-        • 👷‍♀️Engine replacement
-      </a>
-        <a href="#">
-        • 💨Exhausts
-      </a>
-        <a href="#">
-        • 🔩Fuel filter replacement
-      </a>
-        <a href="#">
-        • 🔧Fuel injector diagnostics
-      </a>
-        <a href="#">
-        •💧 Fuel injector nozzle flushing
-      </a>
-        <a href="#">
-        • ⛽Fuel pump replacement
-      </a>
-        <a href="#">
-        • 🧰Fuel system diagnostics
-      </a>
-        <a href="#">
-        • 📐Headlight alignment
-      </a>
-        <a href="#">
-        • 📏Injector diagnostics
-      </a>
-        <a href="#">
-        • &nbsp;⟁ MOTs
-      </a>
-        <a href="#">
-        • ⛓️Parking brake adjustment
-      </a>
-        <a href="#">
-        • 🧑🏻‍🔧Plastic car parts repair
-      </a>
-        <a href="#">
-        • ⚙️Reduction gear repair
-      </a>
-        <a href="#">
-        • 🔧Reduction gear replacement
-      </a>
-        <a href="#">
-        • 🔩Shock absorbers repair
-      </a>
-        <a href="#">
-        • 💥Spark plugs replacement
-      </a>
-        <a href="#">
-        • ⛓️Suspension diagnostics
-      </a>
-        <a href="#">
-        • 🗜️Suspension replacement
-      </a>
-        <a href="#">
-        • 🪢Timing belt replacement
-      </a>
-        <a href="#">
-        • 🏎️Transmission repair
-      </a>
-        <a href="#">
-        • 🏍️Turbocharger replacement
-      </a>
-        <a href="#">
-        • 🍩Tyres
-      </a>
-        <a href="#">
-        • 🧑🏿‍🔧Welding work
-      </a>
-        <a href="#">
-        •🪟 Windshield chip repair
-      </a>
-      </div>
+          </div><div class="event box">
+            <div class="event-wrapper">
+              <center>
+                <a href="mot.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('MOT','','https://i.imgur.com/xkKRarI.gif',1)"><img src="https://i.imgur.com/XgGDlv4.png" alt="MOT" width="250" height="250" id="MOT"></a>
+              </center>
+              <div class="event-date">
+              </div>
+              <div class="event-title">M.O.T Test Centre</div>
+              <div class="event-subtitle">Looking for a reliable garage in and around Airedale, then look no further. From the same award-winning Social Enterprise Airedale Computers, Airedale Car Clinic offers a range of car servicing, repairs, and MOTs. With all profits being donated back to local communities.
+</div>
             </div>
           </div>
          <div class="pages box" style="
@@ -255,75 +159,42 @@ a:active {
         </div>
         <div class="timeline-right">
           <div class="status box">
-            <div class="status-menu">
-              <a class="status-menu-item active" href="#">🚗 About us | <span style="font-size:11px">Airedale Car Clinic</span></a>
-            </div>
-            <div class="status-main">
-              <table width="100%" border="0">
-                <tbody>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td><span style="font-size:16px"><span style="color:#f7fef1"><p><span style="font-size:18px"><span style="color:#ccffcc">Airedale Car Clinic is more than just a garage.</span><span style="color:#f7fef1"> We are a community social enterprise that offers a wide range of vehicle services, from MOTs and repairs to tyres and exhausts, for all makes and models of cars. Whether you need a routine check-up or a major overhaul, our team of qualified and experienced mechanics will provide you with high-quality workmanship and friendly customer service.</span></span></p>
-
-<p><span style="font-size:18px"><span style="color:#ccffcc">Airedale Car Clinic is also a charitable organisation that supports the local community.</span><span style="color:#f7fef1"> We are owned and operated by Chrysalis Youth and Community Project, a registered charity that aims to improve the lives of young people and families in the Airedale area. All our profits are reinvested back into the charity, enabling us to fund various projects and activities that promote education, health, and social inclusion.</span></span></p>
-
-<p><span style="font-size:18px"><span style="color:#ccffcc">By choosing Airedale Car Clinic, you are not only getting a reliable and affordable car service, but you are also making a positive difference in your community.</span><span style="color:#f7fef1"> We are proud to be an award-winning social enterprise that has been recognised by the Social Enterprise UK Awardsand the West Yorkshire Social Enterprise Network. We are also accredited by the </span><a href="https://www.goodgaragescheme.com/" target="_blank"><span style="color:#e6f7ff">Good Garage Scheme</span></a><span style="color:#f7fef1">&nbsp;and the </span><a href="https://www.themotorombudsman.org/wp-content/uploads/sites/9/2018/02/ServiceRepair.pdf" target="_blank"><span style="color:#e6f7ff">Motor Industry Code of Practice</span></a><span style="color:#f7fef1">, ensuring that we adhere to the highest standards of quality and ethics.</span></span></p>
-
-<p><span style="font-size:18px"><span style="color:#f7fef1">So, if you are looking for a car service that cares about you and your community, look no further than Airedale Car Clinic. Contact us today to book an appointment or get a free quote. You can call us on 01977 736281, email us at </span><a href="mailto:info@airedalecarclinic.co.uk?subject=Customer%20%7C%20Airedale%20Car%20Clinic%20Website"><span style="color:#e6f7ff">info@airedalecarclinic.co.uk</span></a><span style="color:#f7fef1">, or check us out on </span><a href="https://www.yell.com/biz/airedale-car-clinic-castleford-4349262/" target="_blank"><span style="color:#e6f7ff">Yell</span></a><span style="color:#f7fef1">.<br />
-We look forward to hearing from you and serving your car needs.</span></span></p><div class="album-photos">
-                <img src="https://i.imgur.com/fAYNx6i.png" alt="" class="album-photo">
-                <div class="album-right">
-                  <img src="https://i.imgur.com/GJKKETx.png" alt="" class="album-photo">
-                  <img src="https://i.imgur.com/FV8J4Jt.png" alt="" class="album-photo">&gt;
-                </div>
-              </div>
-</span></span></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-			  
-            <div class="status-actions">
-              <a href="#" class="status-action">
-                <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M333.7 123.3c0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1h-.1c-33.9 0-63.2-12.1-87.1-36.1-24-24-36.2-53.3-36.2-87.2 0-33.9 12.2-63.2 36.2-87.2 24-24 53.2-36 87-36.1h.2c33.8 0 63.2 12.2 87.1 36.1 24 24 36.2 53.3 36.2 87.2zm0 0" fill="#ffbb85"></path>
-                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H90.2c-26.6 0-48.5-8-65-23.7C8.5 472.3 0 450.7 0 423.9c0-10.2.3-20.4 1-30.2a302.7 302.7 0 0112.1-64.9c3.3-10.3 7.8-20.5 13.4-30.3 5.8-10.2 12.5-19 20.1-26.3a89 89 0 0129-18.2c11.2-4.4 23.7-6.7 37-6.7 5.2 0 10.3 2.2 20 8.5l21 13.5c6.6 4.3 15.7 8.3 27 11.9a107.7 107.7 0 0033 5.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#6aa9ff"></path>
-                  <path d="M210.4 246.6h-.1V0c34 0 63.3 12.2 87.2 36.1 24 24 36.2 53.3 36.2 87.2 0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1zm0 0" fill="#f5a86c"></path>
-                  <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H210.2V286.5h3.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#2682ff"></path>
-                </svg>
-                Social Enterprise at it's best
-              </a>
-              
-              <button class="status-share" style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;"><a href="mot.htm"><span style="color:#ffffff">MOT</span></a></button>
-              <button class="status-share" style="margin-left: 10px; padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;"><a href="service.htm"><span style="color:#ffffff">Service</span></a></button>
-              <button class="status-share" style="margin-left: 10px;"><a href="https://www.facebook.com/AiredaleCarClinic/reviews?locale=en_GB" target="_blank"><span style="color:#ffffff">Review</span></a></button>
-            </div>
-          </div>
-          <div class="status box" style="
-    margin-top: 20px;
+            <div class="status-menu" style="
+    padding-bottom: 0px;
 ">
-            <div align="right" class="status-menu">
-              <a class="status-menu-item active" href="#">❓ Why Choose Airedale Car Clinic:
-
-              </a>
+              <a class="status-menu-item active" href="#">🔧 What is a car service?</a>
             </div>
-            <div class="status-main">
-              <table width="100%" border="0">
-                <tbody>
-                  <tr>
-                    <td><span style="font-size:16px"><span style="color:#f7fef1"><ul>
-	<li><span style="color:#ccffcc"><strong>High-quality car service</strong>: </span><span style="color:#f7fef1">We offer a wide range of vehicle services, from MOTs and repairs to tyres and exhausts, for all makes and models of cars. Our team of qualified and experienced mechanics will provide you with high-quality workmanship and friendly customer service.</span></li>
-	<li><span style="color:#ccffcc"><strong>Community social enterprise</strong>:</span> <span style="color:#f7fef1">We are a community social enterprise that supports the local community. We are owned and operated by Chrysalis Youth and Community Project, a registered charity that aims to improve the lives of young people and families in the Airedale area. All our profits are reinvested back into the charity, enabling us to fund various projects and activities that promote education, health, and social inclusion.</span></li>
-	<li><span style="color:#ccffcc"><strong>Award-winning and accredited</strong>:</span> <span style="color:#f7fef1">We are proud to be an award-winning social enterprise that has been recognised by the Social Enterprise UK Awards and the West Yorkshire Social Enterprise Network. We are also accredited by the Good Garage Scheme and the Motor Industry Code of Practice, ensuring that we adhere to the highest standards of quality and ethics.</span></li>
-	<li><span style="color:#ccffcc"><strong>Environmental sustainability</strong>:</span> <span style="color:#f7fef1">We are committed to reducing our environmental impact and promoting the circular economy. We use recycled and refurbished parts whenever possible, and we dispose of waste materials responsibly.</span></li>
-	<li><span style="color:#ccffcc"><strong>Customer satisfaction and loyalty</strong>:</span> <span style="color:#f7fef1">We value our customers and strive to exceed their expectations. We offer competitive prices and&nbsp;flexible payment options. We also have a customer feedback system that allows us to improve our service and address any issues. We are rated highly by our customers on Facebook , Google and Yell.</span></li>
-</ul></span></span></td>
-                  </tr>
-                </tbody>
-              </table>
+            <div class="status-main" style="
+    padding-bottom: 0px;
+"><span style="color:#f7fef1"><span style="font-size:17.5px">
+
+</span></span>
+              <p style="
+    margin-top: 0px;
+" data_temp_dwid="0"></p><p style="
+    margin-top: 0px;
+    margin-bottom: 10px;
+">A car service is a routine check-up for your vehicle that involves inspecting, adjusting, and replacing various parts and fluids to ensure its optimal performance and safety. A car service is usually done by a qualified mechanic at a garage, and it can vary in scope and cost depending on the type of service and the condition of your car.</p>
+
+<p style="
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 20px;
+">There are different types of car services, such as interim, full, and major, that have different intervals and levels of comprehensiveness. An interim service is recommended every 6,000 miles or 6 months, whichever comes first, and it covers the basic maintenance tasks such as changing the oil and oil filter, checking the tyres, brakes, lights, and battery, and topping up the fluids. A full service is recommended every 12,000 miles or 12 months, whichever comes first, and it includes everything in an interim service plus more detailed checks and adjustments such as replacing the air filter, spark plugs, and fuel filter, checking the wheel alignment, suspension, and steering, and testing the emissions. A major service is recommended every 24,000 miles or 24 months, whichever comes first, and it is the most comprehensive service that covers everything in a full service plus additional checks and replacements such as changing the brake fluid, coolant, and transmission fluid, checking the timing belt, and cleaning the fuel system.</p>
+
+<p style="
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 40px;
+">A car service can help you extend the lifespan of your vehicle, improve its fuel efficiency, reduce the risk of breakdowns and accidents, and save you money on repairs and insurance in the long run. It can also help you comply with the legal requirements and pass the MOT test, which is a mandatory annual inspection for vehicles over three years old in the UK. A car service is not the same as an MOT test, as the latter only checks the roadworthiness of your vehicle and does not involve any repairs or replacements.</p>
+<p></p>
+              <span style="color:#f7fef1"><span style="font-size:17.5px"> </span></span>
+              <div class="mapouter"></div>
             </div>
 			  
-            <div class="status-actions">
+            <div class="status-actions" style="
+    padding-top: 10px;
+">
               <a href="#" class="status-action">
                 <svg viewBox="-42 0 512 512" xmlns="http://www.w3.org/2000/svg">
                   <path d="M333.7 123.3c0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1h-.1c-33.9 0-63.2-12.1-87.1-36.1-24-24-36.2-53.3-36.2-87.2 0-33.9 12.2-63.2 36.2-87.2 24-24 53.2-36 87-36.1h.2c33.8 0 63.2 12.2 87.1 36.1 24 24 36.2 53.3 36.2 87.2zm0 0" fill="#ffbb85"></path>
@@ -331,16 +202,16 @@ We look forward to hearing from you and serving your car needs.</span></span></p
                   <path d="M210.4 246.6h-.1V0c34 0 63.3 12.2 87.2 36.1 24 24 36.2 53.3 36.2 87.2 0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1zm0 0" fill="#f5a86c"></path>
                   <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H210.2V286.5h3.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#2682ff"></path>
                 </svg>
-              Call us today on 01977 736281&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
+              Check the details, tax, and MOT status of a vehicle<br>vehicle enquiry service is a GOV.UK utility
+              </a>
               
-              <button class="status-share" style="padding-top: 5px; padding-bottom: 5px; margin-top: 5px; margin-bottom: 5px; background-color: darkgreen; box-shadow: 0 0 20px forestgreen;"><a href="mot.htm"><span style="color:#ffffff">MOT</span></a></button>
-              <button class="status-share" style="margin-left: 10px;"><a href="https://www.facebook.com/AiredaleCarClinic/reviews?locale=en_GB" target="_blank"><span style="color:#ffffff">Review</span></a></button>
+              <button class="status-share" style="margin-top: 5px; margin-bottom: 5px;"><a href="https://www.check-mot.service.gov.uk/" target="_blank"><span style="color:#ffffff">vehicle enquiry service</span></a></button>
             </div>
           </div><div class="status box" style="
     margin-top: 20px;
 ">
             <div align="right" class="status-menu">
-              <a class="status-menu-item active" href="#">⚙️ M.O.T Test Centre
+              <a class="status-menu-item active" href="#">⚙️ Service
 
               </a>
             </div>
@@ -348,14 +219,14 @@ We look forward to hearing from you and serving your car needs.</span></span></p
               <table width="100%" border="0">
                 <tbody>
                   <tr>
-                    <td><a href="mot.htm"><img src="https://i.imgur.com/umgx7WK.png" draggable="false" class="profile-img"></a></td>
+                    <td><img src="https://i.imgur.com/xRjvwP9.png" draggable="false" class="profile-img"></td>
                     <td><p style="
     margin-bottom: 0px;
-"><span style="color:#999999"><span style="font-size:10px">MOT stands for Ministry of Transport. This was the government department responsible for checking vehicle roadworthiness when the test was introduced in 1960.</span></span></p>
+"><span style="color:#999999"><span style="font-size:10px">A car service can help you extend the lifespan of your vehicle, improve its fuel efficiency, reduce the risk of breakdowns and accidents, and save you money on repairs and insurance in the long run.</span></span></p>
                       <p style="
     margin-top: 6px;
 "><font color="#999999"><span style="font-size: 10px;"></span></font>
-                    Looking for a reliable garage in and around Airedale, then look no further. From the same award-winning Social Enterprise Airedale Computers, Airedale Car Clinic offers a range of car servicing, repairs, and MOTs. With all profits being donated back to local communities.</p>                     </span></span></td>
+                    A car service is a routine check-up for your vehicle that involves inspecting, adjusting, and replacing various parts and fluids to ensure its optimal performance and safety. Our car serviceing is  done by Mel,&nbsp; a qualified mechanic at our garage, and it can vary in scope and cost depending on the type of service and the condition of your car.</p>                     </td>
                   </tr>
                 </tbody>
               </table>
@@ -369,10 +240,17 @@ We look forward to hearing from you and serving your car needs.</span></span></p
                   <path d="M210.4 246.6h-.1V0c34 0 63.3 12.2 87.2 36.1 24 24 36.2 53.3 36.2 87.2 0 33.9-12.2 63.2-36.2 87.2-24 24-53.3 36.1-87.1 36.1zm0 0" fill="#f5a86c"></path>
                   <path d="M427.2 424c0 26.7-8.5 48.3-25.3 64.3-16.5 15.7-38.4 23.7-65 23.7H210.2V286.5h3.3c11 0 22-1.8 33-5.3 11.2-3.6 20.3-7.6 27-12l21-13.4c9.7-6.3 14.7-8.5 20-8.5 13.3 0 25.7 2.3 37 6.7a89 89 0 0128.9 18.2c7.6 7.3 14.4 16.1 20.2 26.3 5.5 9.8 10 20 13.3 30.3a305.5 305.5 0 0112.1 64.9c.7 9.8 1 20 1 30.2zm0 0" fill="#2682ff"></path>
                 </svg>
-              The first test is on the third anniversary of your vehicle’s registration.
-            </a>
-              <button class="status-share" style="">Review</button>
+              Generally, a car should be serviced once a year <br>
+              or every 12,000 miles, whichever comes first. </a>
+              <button class="status-share" style=""><a href="https://www.facebook.com/AiredaleCarClinic/reviews?locale=en_GB" target="_blank"><span style="color:#ffffff">Review</span></a></button>
             </div>
+          </div>
+          <div class="status box" style="
+    margin-top: 20px;
+">
+          </div><div class="status box" style="
+    margin-top: 20px;
+">
           </div>
         </div>
       </div>
